@@ -20,7 +20,7 @@ export default class Weather extends React.Component {
             forecast :{
               main:json.weather[0].main,
               description:json.weather[0].description,
-              temp:json.weather[0].temp
+              temp:json.main.temp
             }
           }
         );
@@ -62,7 +62,7 @@ const styles = StyleSheet.create({
 
  }, 
  font:{
-    fontSize:30,
+    fontSize:24,
 
  },
 });
