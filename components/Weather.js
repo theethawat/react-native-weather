@@ -2,18 +2,6 @@ import React from 'react';
 import { StyleSheet, Text, View,ImageBackground } from 'react-native';
 import Forecast from  './Forecast';
 
-export default class WatherScreen extends React.Component {
-  static navigationOptions = ({navigation}) =>{
-      return {
-          headerTitle: (<Text>Weather</Text>),
-      }
-  }
-  render(){
-      return(
-          <Weather zipcode="90110" />
-      );
-  }
-}
 
 export default class Weather extends React.Component {
   constructor(props){

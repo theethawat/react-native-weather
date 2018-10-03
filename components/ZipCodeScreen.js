@@ -9,7 +9,7 @@ const availableZipItems = [
     {place : 'Khonkaen',code:'40000'},
 ]
 
-const Zipitem = ({place,code,navigative}) =>(
+const Zipitem = ({place,code,navigate}) =>(
    <View style={styles.zipItem}>
         <Text style={styles.zipPlace}>{place}</Text>
         <Text style={styles.zipCode}>{code}</Text>
@@ -36,7 +36,7 @@ const styles = StyleSheet.create({
 
   const _keyExtractor = item => item.code
 
-  export default class WeatherScreen extends React.Component{
+  export default class ZipCodeScreen extends React.Component{
       static navigationOptions = ({navigation}) =>{
           return{
               headerTitle: (<Text>Choose a zip Code</Text>),
