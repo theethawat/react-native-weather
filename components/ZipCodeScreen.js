@@ -19,17 +19,23 @@ const Zipitem = ({place,code,navigate}) =>(
 const styles = StyleSheet.create({
     zipPlace: {
       fontSize:20,
-      textAlign:'right',
+      textAlign:'left',
+      flex:1,
     },
     zipCode: {
         fontSize:20,
-        textAlign:'left',
+        textAlign:'right',
+        flex:1,
       },
     zipItem:{
-        flex: 1,
-        backgroundColor: '#fff',
-        alignItems: 'center',
-        justifyContent: 'center', 
+        flex: 2,
+        display:'flex',
+        padding:22,
+        flexDirection: 'column',
+        justifyContent: 'space-between',
+        borderBottomWidth: 1,
+        borderBottomColor:'#40e0d0',
+        
     },
 
   });
