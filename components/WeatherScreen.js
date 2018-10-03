@@ -10,8 +10,9 @@ export default class WeatherScreen extends React.Component {
       }
   }
   render(){
+      const zipCode = this.props.navigation.getParam('zipCode')
       return(
-          <Weather zipcode="90110" />
+          <Weather zipCode={zipCode} />
       );
   }
 }
