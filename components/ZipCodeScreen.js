@@ -19,16 +19,19 @@ const Zipitem = ({place,code,navigative}) =>(
 const styles = StyleSheet.create({
     zipPlace: {
       fontSize:20,
-      backgroundColor: '#fff',
-      alignItems: 'center',
-      justifyContent: 'left', 
+      textAlign:'right',
     },
     zipCode: {
         fontSize:20,
+        textAlign:'left',
+      },
+    zipItem:{
+        flex: 1,
         backgroundColor: '#fff',
         alignItems: 'center',
-        justifyContent: 'right', 
-      },
+        justifyContent: 'center', 
+    },
+
   });
 
   const _keyExtractor = item => item.code
